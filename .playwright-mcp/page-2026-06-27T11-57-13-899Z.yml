@@ -1,0 +1,155 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - paragraph [ref=e7]: CHECKPOINT 2026
+      - generic [ref=e9]:
+        - img "Mita Ayu Lestari" [ref=e13]
+        - generic [ref=e15]:
+          - generic [ref=e16]: Hari ini ulang tahun! 🎂
+          - heading "Mita Ayu Lestari" [level=1] [ref=e17]
+          - paragraph [ref=e18]:
+            - text: "@mita"
+            - generic [ref=e19]: "#2806"
+          - paragraph [ref=e21]: Anggota sejak
+          - paragraph [ref=e22]: 28 Juni 2001
+          - generic "Lencana" [ref=e23]:
+            - generic "Ulang tahun" [ref=e24]: 🎂
+            - generic "Spesial" [ref=e25]: ⭐
+            - generic "Tersayang" [ref=e26]: 💝
+    - generic [ref=e28]: Scroll
+  - generic [ref=e31]:
+    - generic [ref=e32]:
+      - paragraph [ref=e33]: Our Journey Together
+      - heading "Sudah sejauh ini, dan masih terus jalan." [level=2] [ref=e34]
+      - paragraph [ref=e35]: Dihitung sejak 3 Januari 2023
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e39]: "0"
+        - generic [ref=e40]: Hari
+      - generic [ref=e42]:
+        - generic [ref=e43]: "11"
+        - generic [ref=e44]: Jam
+      - generic [ref=e46]:
+        - generic [ref=e47]: "57"
+        - generic [ref=e48]: Menit
+      - generic [ref=e50]:
+        - generic [ref=e51]: "13"
+        - generic [ref=e52]: Detik
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - paragraph [ref=e56]: Rekap Singkat
+      - heading "Sedikit fakta soal kamu." [level=2] [ref=e57]
+    - generic [ref=e59]:
+      - generic [ref=e61]: ∞
+      - generic [ref=e62]: Kali bikin aku senyum tahun ini
+      - generic [ref=e63]: LEVEL UP → 0
+    - generic [ref=e64]:
+      - generic [ref=e66]:
+        - generic [ref=e67]: 🏆
+        - generic [ref=e68]: "#1"
+        - generic [ref=e69]: Orang favoritku
+      - generic [ref=e71]:
+        - generic [ref=e72]: 🎧
+        - generic [ref=e73]: GANTI
+        - generic [ref=e74]: Lagu paling sering kamu putar
+      - generic [ref=e76]:
+        - generic [ref=e77]: 🍜
+        - generic [ref=e78]: GANTI
+        - generic [ref=e79]: Makanan yang nggak pernah bosan
+      - generic [ref=e81]:
+        - generic [ref=e82]: 😴
+        - generic [ref=e83]: GANTI
+        - generic [ref=e84]: Jam tidur paling parah
+    - generic [ref=e85]:
+      - paragraph [ref=e87]:
+        - generic [ref=e88]: ✓
+        - text: Senyummu masih jadi notifikasi favoritku.
+      - paragraph [ref=e90]:
+        - generic [ref=e91]: ✓
+        - text: Kamu naik level ke umur 25 hari ini.
+      - paragraph [ref=e93]:
+        - generic [ref=e94]: ✓
+        - text: "Status: selalu online di hatiku."
+  - generic [ref=e96]:
+    - generic [ref=e97]:
+      - paragraph [ref=e98]: "# momen-tersemat"
+      - heading "Momen yang tersemat." [level=2] [ref=e99]
+      - paragraph [ref=e100]: Beberapa highlight dari perjalanan kita.
+    - generic [ref=e101]:
+      - article [ref=e103]:
+        - generic [ref=e104]: ✨
+        - generic [ref=e105]:
+          - text: Jan 2023
+          - heading "Awal Cerita Kita" [level=3] [ref=e106]
+          - paragraph [ref=e107]: Momen pertama yang bikin semuanya berubah. Dari sini semua dimulai.
+      - article [ref=e109]:
+        - generic [ref=e110]: 🍕
+        - generic [ref=e111]:
+          - text: Mar 2023
+          - heading "Jalan Pertama" [level=3] [ref=e112]
+          - paragraph [ref=e113]: Ketawa nggak jelas, ngobrol sampai lupa waktu. Hari yang susah dilupain.
+      - article [ref=e115]:
+        - generic [ref=e116]: 🌅
+        - generic [ref=e117]:
+          - text: Agu 2023
+          - heading "Liburan Bareng" [level=3] [ref=e118]
+          - paragraph [ref=e119]: Tempat baru, foto banyak, dan kamu yang bikin perjalanannya jadi seru.
+      - article [ref=e121]:
+        - generic [ref=e122]: 🎄
+        - generic [ref=e123]:
+          - text: Des 2023
+          - heading "Tutup Tahun Berdua" [level=3] [ref=e124]
+          - paragraph [ref=e125]: Penuh cerita, penuh tawa. Tahun yang nggak akan kita lupain.
+      - article [ref=e127]:
+        - generic [ref=e128]: 🎂
+        - generic [ref=e129]:
+          - text: Jun 2026
+          - heading "Ulang Tahunmu" [level=3] [ref=e130]
+          - paragraph [ref=e131]: Dan sekarang, hari spesialmu. Selamat bertambah umur, Mita.
+  - generic [ref=e133]:
+    - generic [ref=e134]:
+      - paragraph [ref=e135]: "# galeri-media"
+      - heading "Galeri kenangan." [level=2] [ref=e136]
+      - paragraph [ref=e137]: Ketuk salah satu buat lihat lebih besar.
+    - generic [ref=e138]:
+      - 'button "Buka foto: Momen favoritku" [ref=e140] [cursor=pointer]':
+        - img "Momen favoritku" [ref=e141]
+        - generic [ref=e143]: Momen favoritku
+      - 'button "Buka foto: Senyum terbaikmu" [ref=e145] [cursor=pointer]':
+        - img "Senyum terbaikmu" [ref=e146]
+        - generic [ref=e148]: Senyum terbaikmu
+      - 'button "Buka foto: Lagi seru-serunya" [ref=e150] [cursor=pointer]':
+        - img "Lagi seru-serunya" [ref=e151]
+        - generic [ref=e153]: Lagi seru-serunya
+      - 'button "Buka foto: Petualangan kita" [ref=e155] [cursor=pointer]':
+        - img "Petualangan kita" [ref=e156]
+        - generic [ref=e158]: Petualangan kita
+      - 'button "Buka foto: Random tapi berkesan" [ref=e160] [cursor=pointer]':
+        - img "Random tapi berkesan" [ref=e161]
+        - generic [ref=e163]: Random tapi berkesan
+      - 'button "Buka foto: Selalu kangen ini" [ref=e165] [cursor=pointer]':
+        - img "Selalu kangen ini" [ref=e166]
+        - generic [ref=e168]: Selalu kangen ini
+  - generic [ref=e170]:
+    - generic [ref=e171]:
+      - paragraph [ref=e172]: Pesan Langsung
+      - heading "Satu pesan buat kamu." [level=2] [ref=e173]
+    - generic [ref=e176]:
+      - generic [ref=e177]: K
+      - generic [ref=e178]:
+        - generic [ref=e179]: kamu
+        - generic [ref=e180]: Selalu online buat kamu
+  - contentinfo [ref=e183]:
+    - generic [ref=e184]:
+      - generic [ref=e185]: ✓
+      - heading "Checkpoint selesai." [level=2] [ref=e186]
+      - paragraph [ref=e187]:
+        - text: Selamat ulang tahun,
+        - strong [ref=e188]: Mita
+        - text: . Sampai jumpa di rekap tahun depan 🎂
+      - paragraph [ref=e189]: Dibuat khusus buat kamu
+  - button "Putar musik" [ref=e191] [cursor=pointer]:
+    - generic [ref=e197]:
+      - generic [ref=e198]: Putar lagu
+      - generic [ref=e199]: Discord Checkpoint
+    - img [ref=e201]
