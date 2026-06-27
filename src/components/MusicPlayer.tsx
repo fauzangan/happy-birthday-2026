@@ -23,28 +23,38 @@ export default function MusicPlayer() {
     return () => clearTimeout(t);
   }, []);
 
-  /* Autoplay on open (loop). Browsers block autoplay-with-sound until the
-     user interacts, so if the initial play() is rejected we retry on the
-     first interaction (click / keydown / scroll / touch). */
+  /* Autoplay on open (loop). Browsers block autoplay-WITH-SOUND until the
+     user interacts, but MUTED autoplay is always allowed. So we start the
+     track muted right away (it is really playing), then unmute it on the
+     very first user interaction — click / keydown / scroll / touch / move.
+     If even the muted play() is rejected, we still retry on interaction. */
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
 
-    let started = false;
+    /* Kick off muted playback immediately so the track is running on open */
+    audio.muted = true;
+    audio
+      .play()
+      .then(() => setPlaying(true))
+      .catch(() => {
+        /* even muted was blocked — will start on first interaction below */
+      });
 
-    const start = () => {
-      if (started || !audio) return;
+    let unmuted = false;
+
+    const unmute = () => {
+      if (unmuted || !audio) return;
+      unmuted = true;
+      audio.muted = false;
       audio
         .play()
         .then(() => {
-          started = true;
           setPlaying(true);
           setPulse(false);
-          removeListeners();
         })
-        .catch(() => {
-          /* still blocked — wait for a real interaction */
-        });
+        .catch(() => {});
+      removeListeners();
     };
 
     const events: Array<keyof DocumentEventMap> = [
@@ -52,17 +62,15 @@ export default function MusicPlayer() {
       'keydown',
       'scroll',
       'touchstart',
+      'mousemove',
     ];
 
     function removeListeners() {
-      events.forEach((e) => window.removeEventListener(e, start));
+      events.forEach((e) => window.removeEventListener(e, unmute));
     }
 
-    /* Try immediately on load */
-    start();
-    /* And arm listeners in case it was blocked */
     events.forEach((e) =>
-      window.addEventListener(e, start, { passive: true })
+      window.addEventListener(e, unmute, { passive: true })
     );
 
     return removeListeners;
@@ -72,6 +80,7 @@ export default function MusicPlayer() {
     const audio = audioRef.current;
     if (!audio) return;
     setPulse(false);
+    audio.muted = false;
     if (playing) {
       audio.pause();
     } else {

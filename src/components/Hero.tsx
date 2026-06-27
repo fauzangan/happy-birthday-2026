@@ -31,7 +31,7 @@ export default function ProfileHero() {
 
   return (
     <section className="hero">
-      <Parallax speed={0.06}>
+      <Parallax speed={0.06} className="hero__parallax">
       <div className={`profile ${show ? 'profile--in' : ''}`}>
         <p className="profile__eyebrow">
           <span className="profile__eyebrow-dot" />

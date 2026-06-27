@@ -22,6 +22,10 @@
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50%      { transform: translateX(-50%) translateY(10px); }
 }
+@keyframes bounceY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(10px); }
+}
 @keyframes presencePulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(87, 242, 135, 0.5); }
   50%      { box-shadow: 0 0 0 6px rgba(87, 242, 135, 0); }
@@ -143,6 +147,8 @@
     radial-gradient(ellipse at 80% 100%, rgba(235, 69, 158, 0.18) 0%, transparent 55%),
     var(--ink);
 }
+
+.hero__parallax { width: 100%; max-width: 540px; }
 
 .profile {
   width: 100%;
@@ -886,6 +892,16 @@
 
 @media (max-width: 600px) {
   .scene { padding: 4rem 1.1rem; }
+
+  .hero { padding: 3rem 1.1rem; }
+  .profile__body { padding: 0.8rem 1.2rem 1.6rem; }
+  .profile__avatar-wrap { margin-left: 20px; }
+  .hero__scroll {
+    position: static;
+    transform: none;
+    margin-top: 1.6rem;
+    animation: bounceY 2.5s ease-in-out 2s infinite;
+  }
   .counter__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
   .counter__tile { min-width: 0; }
   .gallery__grid { gap: 0.7rem; }
