@@ -13,9 +13,9 @@ const BIG_STAT = { value: '∞', label: 'Kali bikin aku senyum tahun ini' };
 
 const STATS = [
   { emoji: '🏆', value: '#1', label: 'Orang favoritku' },
-  { emoji: '🎧', value: 'GANTI', label: 'Lagu paling sering kamu putar' },
-  { emoji: '🍜', value: 'GANTI', label: 'Makanan yang nggak pernah bosan' },
-  { emoji: '😴', value: 'GANTI', label: 'Jam tidur paling parah' },
+  { emoji: '😡', value: '#2', label: 'Orang paling sering ngambek' },
+  { emoji: '🍜', value: '#3', label: 'Makanan favoritenya sushi' },
+  { emoji: '😴', value: '#4', label: 'Hobinya tidur' },
 ];
 
 const FACTS = [
